@@ -13,14 +13,34 @@ public class Event {
     Employee organizer;
     ArrayList<Employee> presenter;
     String date;
+    String eventname;
+
+    public String getTime() {
+        return time;
+    }
+
+    public void setTime(String time) {
+        this.time = time;
+    }
+
+    String time;
     String address;
 
     public Event(){
 
     }
 
+
     public Employee getOrganizer() {
         return organizer;
+    }
+
+    public String getEventname() {
+        return eventname;
+    }
+
+    public void setEventname(String eventname) {
+        this.eventname = eventname;
     }
 
     public void setOrganizer(Employee organizer) {
