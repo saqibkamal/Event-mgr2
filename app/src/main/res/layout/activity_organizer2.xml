@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="kamal.saqib.eventmanager.OrganizerActivity">
+
+
+    <Button
+        android:id="@+id/bt_myactivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="My event" />
+
+    <Button
+        android:id="@+id/bt_allactivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/bt_myactivity"
+        android:layout_alignStart="@+id/bt_myactivity"
+        android:layout_below="@+id/bt_myactivity"
+        android:layout_marginTop="23dp"
+        android:text="All event" />
+
+    <Button
+        android:id="@+id/bt_addnew"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="38dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginRight="25dp"
+        android:text="+" />
+
+    <Button
+        android:id="@+id/bt_logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/bt_addnew"
+        android:layout_alignBottom="@+id/bt_addnew"
+        android:layout_alignEnd="@+id/bt_allactivity"
+        android:layout_alignRight="@+id/bt_allactivity"
+        android:text="Logout" />
+
+
+</RelativeLayout>
