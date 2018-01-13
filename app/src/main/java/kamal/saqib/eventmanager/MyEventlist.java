@@ -21,7 +21,7 @@ public class MyEventlist extends AppCompatActivity {
 
         Intent intent = getIntent();
         Bundle args = intent.getBundleExtra("BUNDLE");
-        events = (ArrayList<Event>) args.getSerializable("employee_detail");
+        events = (ArrayList<Event>) args.getSerializable("myeventlist");
 
         arrayAdapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, smsMessagesList);
         messages.setAdapter(arrayAdapter);

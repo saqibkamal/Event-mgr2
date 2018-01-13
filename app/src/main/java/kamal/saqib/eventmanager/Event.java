@@ -14,6 +14,8 @@ public class Event {
     ArrayList<Employee> presenter;
     String date;
     String eventname;
+    String time;
+    String address;
 
     public String getTime() {
         return time;
@@ -23,13 +25,9 @@ public class Event {
         this.time = time;
     }
 
-    String time;
-    String address;
-
     public Event(){
-
+        this.presenter=new ArrayList<>();
     }
-
 
     public Employee getOrganizer() {
         return organizer;

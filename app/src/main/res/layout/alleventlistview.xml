@@ -4,27 +4,22 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <ImageView
-        android:id="@+id/imageview"
-        android:layout_width="48dp"
-        android:layout_height="48dp"
-        android:layout_gravity="center"
-        app:srcCompat="@mipmap/ic_launcher" />
 
     <TextView
-        android:id="@+id/presentername"
-        android:layout_width="280dp"
-        android:layout_height="48dp"
+        android:id="@+id/date"
+        android:layout_width="match_parent"
+        android:layout_height="24dp"
         android:layout_gravity="center"
-        android:layout_marginLeft="60dp"
         android:text="TextView"
         android:textSize="15dp" />
-    <CheckBox
-        android:layout_width="20dp"
-        android:layout_height="20dp"
-        android:id="@+id/checkbox"
-        android:layout_toRightOf="@+id/presentername"
-        android:layout_marginTop="20dp"/>
+    <TextView
+        android:id="@+id/eventname"
+        android:layout_width="match_parent"
+        android:layout_height="24dp"
+        android:layout_gravity="center"
+        android:layout_below="@+id/date"
+        android:text="TextView"
+        android:textSize="15dp" />
 
 
 </RelativeLayout>

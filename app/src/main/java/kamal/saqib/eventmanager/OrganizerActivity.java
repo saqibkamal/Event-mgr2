@@ -39,7 +39,6 @@ public class OrganizerActivity extends AppCompatActivity implements View.OnClick
         setContentView(R.layout.activity_organizer2);
         bt_my=(Button) findViewById(R.id.bt_myactivity);
         bt_all=(Button) findViewById(R.id.bt_allactivity);
-        add_new=(Button) findViewById(R.id.bt_addnew);
         logout=(Button) findViewById(R.id.bt_logout);
 
 
@@ -55,14 +54,15 @@ public class OrganizerActivity extends AppCompatActivity implements View.OnClick
 
 
         Intent intent = getIntent();
-        Bundle args = intent.getBundleExtra("BUNDLE");
-        employee = (Employee) args.getSerializable("employee_detail");
+        Bundle args = intent.getBundleExtra("bundle");
+        employee = (Employee) args.getSerializable("organiserName");
 
 
         firebaseAuth = FirebaseAuth.getInstance();
         email = firebaseAuth.getCurrentUser().getEmail().toString();
 
         events=employee.getEvent();
+
 
 
 
